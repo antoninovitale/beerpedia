@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+option java_package = "com.antoninovitale.beerpedia.data.local";
+option java_multiple_files = true;
+
+message BeerListEntity {
+    message BeerEntity {
+      int32 id = 1;
+      string name = 2;
+      string tagline = 3;
+      string description = 4;
+      string imageUrl = 5;
+
+      message IngredientEntity {
+        string name = 1;
+        double amount = 2;
+        string unit = 3;
+        enum Type {
+          MALT = 0;
+          HOP = 1;
+          YEAST = 2;
+        }
+        Type type = 4;
+      }
+      repeated IngredientEntity ingredients = 6;
+    }
+
+    repeated BeerEntity beers = 1;
+}

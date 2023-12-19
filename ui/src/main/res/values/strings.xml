@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="beer_list_title">Beers from PunkAPI</string>
+    <string name="beer_details_description_title">Description</string>
+    <string name="beer_details_ingredients_title">Ingredients</string>
+    <string name="beer_details_empty_message_title">Oops!</string>
+    <string name="beer_details_empty_message">It seems like we had no luck getting you a beer this time.\nPlease try again later.</string>
+    <string name="beer_details_empty_message_button">Refresh</string>
+    <string name="beer_details_hop_label">hop</string>
+    <string name="beer_details_malt_label">malt</string>
+    <string name="beer_details_yeast_label">yeast</string>
+</resources>
